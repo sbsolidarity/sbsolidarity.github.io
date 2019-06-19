@@ -1,4 +1,4 @@
-@import 'CSS:../../node_modules/normalize.css/normalize';
+@import "normalize";
 
 // By Abelardo Gonzalez, released under SIL-OFL
 // https://gumroad.com/l/OpenDyslexic
@@ -62,9 +62,18 @@ header {
 }
 
 header,
-.description {
+footer {
   background-color: $bg;
   color: $fg;
+
+  a {
+    color: $fg;
+
+    :active,
+    :hover {
+      color: $fg;
+    }
+  }
 }
 
 h1,
